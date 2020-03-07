@@ -11,6 +11,7 @@ gem 'webpacker', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'oath'
+gem 'oath-generators', github: 'halogenandtoast/oath-generators'
 
 group :development, :test do
   gem 'pry-rails'

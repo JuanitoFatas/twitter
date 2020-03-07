@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/halogenandtoast/oath-generators.git
+  revision: 2e1f08b7a149f194d57a5bcb4f5f26a8e7a00754
+  specs:
+    oath-generators (1.0.1)
+      oath (>= 0.0.12)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 526dd6472b3f3ab72ecc2538067b6c94f395fa36
   specs:
@@ -180,6 +187,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   oath
+  oath-generators!
   pg (>= 0.18, < 2.0)
   pry-rails
   puma (~> 4.1)
