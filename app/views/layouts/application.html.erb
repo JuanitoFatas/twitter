@@ -9,7 +9,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', 'defer' => '1' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="text-gray-900 leading-normal">
+    <main class="p-6 max-w-screen-xl mx-auto">
+      <%= yield %>
+    </main>
   </body>
 </html>
