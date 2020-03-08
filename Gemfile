@@ -14,7 +14,7 @@ gem 'oath'
 gem 'oath-generators', github: 'halogenandtoast/oath-generators'
 
 group :development, :test do
-  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do
