@@ -13,6 +13,22 @@
 
   <body class="bg-gray-200 text-gray-900 leading-normal">
     <main class="p-6 max-w-screen-xl mx-auto">
+      <div class="mb-8">
+        <% if signed_in? %>
+          Signed in as: <%= current_user.username %>
+          <%= link_to "Sign out", session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign in", new_session_path %>
+          <%= link_to "Sign up", new_user_path %>
+        <% end %>
+      </div>
+
+      <div id="flash">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+      </div>
+
       <%= yield %>
     </main>
   </body>
