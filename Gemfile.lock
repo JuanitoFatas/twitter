@@ -179,7 +179,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   spring
   turbolinks (~> 5)
-  webpacker (~> 4.0)
+  webpacker (~> 4.2)
 
 RUBY VERSION
    ruby 2.7.0p0

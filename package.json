@@ -9,6 +9,8 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "postcss-purgecss": "^2.0.3",
+    "tailwindcss": "^1.2.0",
     "webpack-dev-server": "^3.10.3"
   }
 }
