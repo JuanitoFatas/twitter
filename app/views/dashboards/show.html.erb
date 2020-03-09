@@ -12,14 +12,4 @@
   <% end %>
 </div>
 
-<ul>
-  <% @tweets.each do |tweet| %>
-    <li class="max-w-sm w-full my-6">
-      <div class="border-r border-b border-l border-gray-400  bg-white rounded-b p-4 leading-normal">
-        <div class="mb-8">
-          <p class="text-gray-700 text-base"><%= tweet.body %></p>
-        </div>
-      </div>
-    </div>
-  <% end %>
-</ul>
+<%= render @tweets %>
