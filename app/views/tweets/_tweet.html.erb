@@ -3,11 +3,13 @@
     <div class="mb-8">
       <p class="text-gray-700 text-base"><%= tweet.body %></p>
     </div>
-    <p class="text-gray-900 text-sm leading-none">
-      <%= tweet.username %>
-      <span class="text-gray-600 text-xs">
-        <%= time_ago_in_words(tweet.created_at) %> ago
-      </span>
+    <p>
+      <%= link_to tweet.username, tweet.user, class: "mt-1 text-lg leading-tight font-medium text-gray-900 hover:underline mr-2" %>
+      <%= link_to tweet do %>
+        <span class="text-gray-600 text-xs">
+          <%= time_ago_in_words(tweet.created_at) %> ago
+        </span>
+      <% end %>
     </p>
   </div>
 </div>
