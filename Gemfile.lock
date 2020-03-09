@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/halogenandtoast/oath-generators.git
+  revision: 2e1f08b7a149f194d57a5bcb4f5f26a8e7a00754
+  specs:
+    oath-generators (1.0.1)
+      oath (>= 0.0.12)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 526dd6472b3f3ab72ecc2538067b6c94f395fa36
   specs:
@@ -85,9 +92,11 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    bcrypt (3.1.13)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
     builder (3.2.4)
+    byebug (11.1.1)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
@@ -113,12 +122,17 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
+    oath (1.1.0)
+      bcrypt
+      rails
+      warden
     pg (1.2.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    pry-rails (0.3.9)
-      pry (>= 0.10.4)
+    pry-byebug (3.8.0)
+      byebug (~> 11.0)
+      pry (~> 0.10)
     puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.2.2)
@@ -158,6 +172,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
+    warden (1.2.8)
+      rack (>= 2.0.6)
     webpacker (4.2.2)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
@@ -172,8 +188,10 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
+  oath
+  oath-generators!
   pg (>= 0.18, < 2.0)
-  pry-rails
+  pry-byebug
   puma (~> 4.1)
   rails!
   sass-rails (>= 6)
