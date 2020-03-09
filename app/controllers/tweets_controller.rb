@@ -12,7 +12,15 @@ class TweetsController < ApplicationController
   private
 
   def tweet_params
-    params.require(:tweet).permit(:body)
+    { content: content_from_params }
+  end
+
+  def content_from_params
+    TextTweet.new(content_params)
+  end
+
+  def content_params
+    params.require(:tweet).require(:content).permit(:body)
   end
 
   def redirect_options_for(tweet)

@@ -1,7 +1,7 @@
 <div class="max-w-sm w-full my-6">
   <div class="border-r border-b border-l border-gray-400  bg-white rounded-b p-4 leading-normal">
     <div class="mb-8">
-      <p class="text-gray-700 text-base"><%= tweet.body %></p>
+      <p class="text-gray-700 text-base"><%= tweet.content.body %></p>
     </div>
     <p>
       <%= link_to tweet.username, tweet.user, class: "mt-1 text-lg leading-tight font-medium text-gray-900 hover:underline mr-2" %>
