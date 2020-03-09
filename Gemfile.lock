@@ -92,6 +92,8 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.13)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -99,7 +101,10 @@ GEM
     byebug (11.1.1)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
+    content_disposition (1.0.0)
     crass (1.0.6)
+    down (5.1.1)
+      addressable (~> 2.5)
     erubi (1.9.0)
     ffi (1.12.2)
     globalid (0.4.2)
@@ -133,6 +138,7 @@ GEM
     pry-byebug (3.8.0)
       byebug (~> 11.0)
       pry (~> 0.10)
+    public_suffix (4.0.3)
     puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.2.2)
@@ -156,6 +162,9 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    shrine (3.2.1)
+      content_disposition (~> 1.0)
+      down (~> 5.1)
     spring (2.1.0)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
@@ -195,6 +204,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails!
   sass-rails (>= 6)
+  shrine (~> 3.2.1)
   spring
   turbolinks (~> 5)
   webpacker (~> 4.2)

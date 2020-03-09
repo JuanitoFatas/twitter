@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'oath'
 gem 'oath-generators', github: 'halogenandtoast/oath-generators'
+gem 'shrine', '~> 3.2.1'
 
 group :development, :test do
   gem 'pry-byebug'
