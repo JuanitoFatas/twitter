@@ -3,7 +3,9 @@
 <div class="w-full max-w-sm">
   <%= form_for @tweet, html: { class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" } do |form| %>
     <div class="mb-6">
-      <%= form.text_area :body, placeholder: "What‘s happening?", require: true, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500 h-40" %>
+      <%= form.fields_for :content do |content_form| %>
+        <%= content_form.text_area :body, placeholder: "What‘s happening?", require: true, class: "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500 h-40" %>
+      <% end %>
     </div>
 
     <div class="text-right">
