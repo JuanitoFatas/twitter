@@ -12,6 +12,7 @@
             <%= time_ago_in_words(tweet.created_at) %> ago
           </span>
         <% end %>
+        <%= like_button(tweet) %>
       </p>
     </div>
   </div>
