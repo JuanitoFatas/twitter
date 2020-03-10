@@ -13,6 +13,8 @@
 
   <body class="bg-gray-200 text-gray-900 leading-normal">
     <main class="p-6 max-w-screen-xl mx-auto">
+      <%= link_to "Twitter", root_path, class: "mb-8 text-xl font-black text-blue-500" %>
+
       <div class="mb-8">
         <% if signed_in? %>
           Signed in as: <%= current_user.username %>
