@@ -15,5 +15,10 @@ Rails.application.routes.draw do
   end
 
   resource :session, only: [:new, :create, :destroy]
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:new, :create, :show] do
+    member do
+      post "follow" => "followed_users#create"
+      delete "follow" => "followed_users#destroy"
+    end
+  end
 end
