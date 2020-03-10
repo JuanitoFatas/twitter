@@ -5,3 +5,7 @@
 @tailwind utilities;
 
 /* purgecss start ignore */
+
+.tweet-content a {
+  @apply mb-8 underline text-blue-500;
+}
