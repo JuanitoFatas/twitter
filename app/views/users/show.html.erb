@@ -1,2 +1,8 @@
-<h1 class="mb-8 text-xl font-black"><%= @user.username %></h1>
+<div class="max-w-sm flex bg-white rounded-lg p-6">
+  <%= avatar @user, css_class: "h-16 w-16 h-24 w-24 rounded-full mx-0 mr-6" %>
+  <div class="text-center md:text-left">
+    <h1 class="mb-8 text-xl font-black"><%= @user.username %></h1>
+  </div>
+</div>
+
 <%= render @tweets %>
