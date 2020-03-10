@@ -1,4 +1,6 @@
 class FollowedUsersController < ApplicationController
+  before_action :require_login
+
   def create
     user_to_follow = find_user
     current_user.follow(user_to_follow)
