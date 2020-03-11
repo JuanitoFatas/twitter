@@ -3,7 +3,7 @@
     <div class="tweet-content">
       <p class="text-gray-700 text-base"><%= render tweet.content %></p>
     </div>
-    <div class="flex items-center">
+    <div class="flex items-center mt-6">
       <%= avatar(tweet.user, css_class: "w-10 h-10 rounded-full mr-4") %>
       <p>
         <%= link_to tweet.username, tweet.user, class: "mt-1 text-lg leading-tight font-medium text-gray-900 hover:underline mr-2" %>

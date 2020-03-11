@@ -2,10 +2,15 @@
 @tailwind base;
 /* purgecss end ignore */
 @tailwind components;
+
+.link {
+  @apply underline text-blue-500;
+}
+
+.tweet-content a {
+  @apply link;
+}
+
 @tailwind utilities;
 
 /* purgecss start ignore */
-
-.tweet-content a {
-  @apply mb-8 underline text-blue-500;
-}
