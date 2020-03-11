@@ -1,5 +1,5 @@
 class DashboardsController < ApplicationController
   def show
-    @tweets = current_user.timeline_tweets
+    @dashboard = Dashboard.new(current_user)
   end
 end

@@ -43,10 +43,6 @@ class User < ActiveRecord::Base
     followed_user_ids.include? user.id
   end
 
-  def timeline_tweets
-    Tweet.where(user_id: followed_user_ids + [id])
-  end
-
   def to_param
     username
   end
