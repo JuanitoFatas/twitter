@@ -14,8 +14,7 @@ module TweetsHelper
   end
 
   def tweet_form_for(content_type)
-    form_for Tweet.new, html: { class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" } do |form|
-      form.hidden_field(:content_type, value: content_type) +
+    form_for Tweet.new, url: content_type.new, html: { class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" } do |form|
       tag.div(class: "mb-6") do
         form.fields_for(:content) do |content_form|
           yield(content_form)
